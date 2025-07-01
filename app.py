@@ -5,7 +5,7 @@ import joblib
 from sklearn.ensemble import RandomForestRegressor
 
 # Load data
-df = pd.read_csv(r"C:\Users\dell\OneDrive\Desktop\FLIGHT_PRICE_PREDICTION\data\Clean_Dataset.csv")
+df = pd.read_csv("data/Clean_Dataset.csv")
 df.drop(columns=['Unnamed: 0', 'flight'], inplace=True)
 df['price'] = np.log1p(df['price'])
 
